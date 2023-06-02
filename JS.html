@@ -1,0 +1,1247 @@
+<head></head>
+<body>
+ <script>
+
+/*Day-1 Practice ------ Date:29-05-23
+
+
+console.log("Ae Halooo");
+
+var a = 1;
+var b = "one";
+var c = null;
+var d = undefined;
+var e = true;
+console.log(typeof a,typeof b,typeof c,typeof d,typeof e);
+
+let fname = "Ravi", lname = "Patel", mstatus = "Not-Married",country = "India", age = 22;
+console.log("First name is: "+ fname,"Last name is: "+ lname,"Maritial Status is: "+ mstatus,"Age is: "+ age);
+console.log("First name is: "+ fname);
+console.log("Last name is: "+ lname);
+console.log("Maritial Status is: "+ mstatus);
+console.log("Country is: "+ country);
+console.log("Age is: "+ age);
+
+const myAge = 22;
+const yourAge = 21;
+console.log("I am " + myAge + " Years old."); 
+console.log("You are " + yourAge + " Years old."); 
+*/
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+//Day-2 Practice ----- Date:29-05-23
+
+// var car = ["BMW", "AUDI", "ALTO"]
+// var car2 = ["BMW", "AUDI", "ALTO"] 
+
+// console.log(car);   
+// console.log(car == car2);   //Returns False
+// console.log(car != car2);   //Returns True
+
+//let nk = 1.2;
+// console.log(typeof n);
+// console.log(Math.round(n));
+// console.log(Math.ceil(n));
+// console.log(Math.floor(n));
+// console.log(Math.min(5, 2, 1.2, 6, 1.1));
+//console.log(Math.random());
+//console.log(Math.pow(Math.ceil(nk), 2));
+
+
+// console.log("Lets Have Some Fun with \"JS\". ")
+// console.log("Lets Have Some \nFun with \'JS\'. ")
+
+// let string = "Ravi";
+// console.log(string[0]+""+string[1]+""+string[2]+""+string[3]);
+// console.log(string[0],string[1],string[2],string[3]);
+// console.log(string[0].toLowerCase());
+// console.log(string[1].toUpperCase());
+// console.log(string[2]);
+// console.log(string[3]);
+// console.log(string.substring(1,4));
+// console.log(typeof (string.substring(1,4)));
+// console.log(string.split('a'));
+
+// let city = "Ahmedabad, surat, baroda";
+// console.log(city.split(','));
+// console.log(typeof (city.split(',')));
+
+// let fname = "  Ravi  ";
+// let lname = "Patel"
+// console.log(fname.trim().concat(" "+lname));
+// console.log(fname.trim());
+// console.log(fname.length);
+// console.log(fname.trim().length);
+
+// // includes() is case sensative so code accordingly
+// console.log(fname.includes("i"));                                   //Returns True
+// console.log(fname.includes("I"));                                   //Returns False
+// console.log(fname.trim().replace("R","r"));                         //Replace(), replace the desire element with required element
+// console.log(fname.trim().charAt(0));         
+// console.log(lname.charAt(0));
+// console.log(fname.trim()+" "+lname.replace("Patel", "Rajput"));
+// console.log(fname.trim().toLowerCase()+" "+lname.toLowerCase());
+// console.log(fname.trim().toUpperCase()+" "+lname.toUpperCase());
+// console.log(fname.charCodeAt("R"));
+// let laststring = lname.length - 1;
+// console.log(laststring);
+// console.log(lname.charCodeAt(laststring));
+// console.log(lname.charCodeAt(lname.length-1));
+// console.log(fname.trim(), fname.indexOf("i"));
+// console.log(fname.trimEnd(), fname.indexOf("i"));
+// console.log(fname.trimStart(), fname.indexOf("i"));
+// console.log(fname.trim().indexOf("i"));
+// console.log(fname.repeat(5));
+// console.log(fname.trim().repeat(5));
+// console.log(lname.match("Patel"));
+// let fullname = fname.trim() +" "+lname;
+// console.log(fullname);
+// console.log(fullname.match("Patel"));
+
+// Casting(Changing Data Types)
+
+// let bdate = "10.2";                             //String
+// let numbdate = parseInt(bdate);                 //Converted Into Int
+// let floatbdate = parseFloat(bdate);             //Converted Into Float
+// console.log(bdate, typeof bdate);               //Print String
+// console.log(numbdate, typeof numbdate);         //Print Int
+// console.log(floatbdate,typeof floatbdate);      //Print Float
+
+
+// let quote = "The quote \'There is no exercise better for the heart than reaching down and lifting people up.\' by John Holmes teaches us to help one another."
+// let quote2 = "\"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.\""
+// console.log(quote);
+// console.log(quote2);
+
+// // console.log(typeof 10 = 10)
+
+// let lang = "python"; 
+// let lang2 = "jargon";
+// let para = "I hope this course is not full of jargon.";
+// console.log(lang.match("on").concat(" "+lang2.match("on")));
+// console.log(para.includes("jargon"));
+
+// console.log(Math.floor(Math.random() * 101));
+// console.log(Math.floor(Math.random() * 51));
+// console.log(Math.floor(Math.random() * 256));
+
+// let sstring = "You cannot end a sentence with because because because is a conjunction";
+// console.log(sstring.indexOf("because"));
+// console.log(sstring.substr(31,23));
+// console.log(sstring.match(/because/gi));                       //g,i,m are the flags of Regular expression
+// g: a global flag which means looking for a pattern in whole text
+// i: case insensitive flag(it searches for both lowercase and uppercase)
+// m: multiline
+
+
+
+
+
+// let para2 = "Love is the best thing in this world. Some found their love and some are still looking for their love";
+// // let regx = /\.*Love/
+// // console.log(para2.matchAll(/\.*Love/));
+// let love = para2.match(/love/gi);
+// console.log(love);
+
+
+
+// const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;.\
+//                  The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;\
+//                  I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. \
+//                  %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+
+// const clearsentance = sentence.replace(/[^\w\s]/gi,"");
+
+// console.log(clearsentance.trim());
+
+// let para3 = "He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month";
+// const value1 = para3.match(5000) * 12;
+// const value2 = para3.match(10000) * 1;
+// const value3 = para3.match(15000) * 12;
+// console.log(value1);
+// console.log(value2);
+// console.log(value3);
+// let totalsalary = value1 + value2 + value3;
+// console.log(totalsalary);
+
+// console.log((para3.match(5000) * 12) + (para3.match(10000) * 1) + (para3.match(15000) * 12));
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+//Day-3 Practice ----- Date:29-05-23
+
+// let a = 10;
+// let b = 10;
+// const PI = 3.14;
+
+// console.log(b ** a);                            //Return's 10^5 Value
+// console.log(PI * a**2);                        //Area Of Circle 
+// console.log(PI * a * a);                      //Area Of Circle 
+
+// let count = 0;
+// console.log(count);
+// console.log(++count);
+// console.log(count);
+// console.log(count++);
+
+
+// let isRaining = prompt('Is it Raining');
+// isRaining == "true" || isRaining == "yes" || isRaining == "True" || isRaining == "Yes" ? alert('Then the final between GT and CSK will Not Happen') : alert('GT will win');
+// // alert(isRaining);
+// //isRaining === true ? alert('You Need a Raincoat') : alert('Just Keep Going');
+// // isRaining ? console.log("Raining Raining Raining...") : console.log("No Raining at all...");
+
+// // let number = prompt('Enter number', 'number goes here')
+// // console.log(number)
+
+// let check = confirm('Are you sure');
+// const now = new Date;
+// console.log(now.getDate()+"-"+now.getMonth()+"-"+now.getFullYear()+" "+now.getHours()+":"+now.getMinutes()+":"+now.getSeconds());
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+//Day-4 Practice ----- Date:30-05-23
+
+// let num = prompt('enter any number1');
+// let num = 3
+// if(num > 0)
+// {
+//     console.log("The Number is greater then 0");
+// }
+// else if(num == 0)
+// {
+//     console.log("The number is equal to 0");
+// }
+// else
+// {
+//     console.log("The number is smaller then 0");
+// }
+
+
+
+// let weather = prompt('How is the weather today')
+// switch(weather){
+//     case 'rainy':
+//         confirm('Must take umbrella with you')
+//         break
+//     case 'cloudy':
+//         confirm('It might rain and cold, you need to take care')
+//         break
+//     case 'sunny':
+//         confirm('Go out Freely, Enjoy Your Day')
+//         break
+//     default:
+//         confirm('No Need Of Rain-Coat')
+// }
+
+// let userAge = prompt('Enter Your Age');
+// if(userAge >= 18)
+// {
+//     confirm('You are old enough to drive');
+// }
+// else
+// {
+//     let leftYears = 18 - userAge;
+//     confirm('You are left with '+leftYears+' years to drive');
+// }
+
+// let myAge = 22;
+// let yourAge = prompt('Enter Your Age');
+// if(yourAge > myAge)
+// {
+//     let diffAge = yourAge-myAge; 
+//     confirm('You are ' + diffAge + ' years older than me');
+// }
+// else
+// {
+//     let diffAge = myAge-yourAge;
+//     confirm('You are '+ diffAge + ' years younger than me');
+// }
+
+
+
+// let a = 50;
+// let b = 10;
+// THIS IS TERNARY OPERATOR
+// let isAGreater = (a > b);
+// isAGreater ? console.log(a + " is greater then " + b) : console.log(b + " is greater then " + a);
+// //THIS IS IF/ELSE
+// if(a > b)
+// {
+//     console.log(a + " is greater then " + b);
+// }
+// else
+// {
+//     console.log(b + " is greater then " + a);
+// }
+
+
+
+
+
+
+// let number = prompt('Enter the number');
+// if(number % 2 == 0)
+// {
+//     confirm(number + ' is an even number');
+// }
+// else
+// {
+//     confirm(number + ' is an odd number');
+// }
+
+
+// let marks = prompt('Enter Your Marks to Calculate your Grades');
+// switch(true)
+// {
+//     case marks >= 80 && marks <= 100:
+//         confirm('Your Grade is "A"')
+//         break
+//     case marks >= 70 && marks <= 79:
+//         confirm('Your Grade is "B"')
+//         break
+//     case marks >= 60 && marks <= 69:
+//         confirm('Your Grade is "C"')
+//         break
+//     case marks >= 50 && marks <= 59:
+//         confirm('Your Grade is "D"')
+//         break
+//     case marks >= 0 && marks <= 49:
+//         confirm('Your Grade is "F"')
+//         break
+//     default:
+//         confirm('No Record Found')
+// }
+
+
+// let seasons = prompt('Enter the months to know current season');
+// switch(true)
+// {
+//     case seasons == 'September' || seasons == 'Octomber' || seasons == 'November':
+//         confirm('the season is Autumn')
+//         break
+//     case seasons == 'December' || seasons == 'January' || seasons == 'February':
+//         confirm('the season is Winter')
+//         break
+//     case seasons == 'March' || seasons == 'April' || seasons == 'May':
+//         confirm('the season is Spring')
+//         break
+//     case seasons == 'June' || seasons == 'July' || seasons == 'August':
+//         confirm('the season is Summer')
+//         break
+// }
+
+
+// let day = prompt('Enter the day');
+// switch(true)
+// {
+//     case day == 'Monday' || day == 'Tuesday' || day == 'Wednesday' || day == 'Thursday' || day == 'Friday':
+//         confirm(day + ' is a working day');
+//         break
+//     case day == 'Saturday' || day == 'Sunday':
+//         confirm(day + ' is a weekend');
+//         break
+// }
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+//Day-5 Practice ----- Date:30-05-23
+
+//  let ArrayDemo = ['car1', 'car2', 'car3']
+// ArrayDemo.push('car4');
+// ArrayDemo.push('car5');
+// console.log(ArrayDemo[Math.floor(ArrayDemo.length/2)]);
+// console.log(ArrayDemo[ArrayDemo.length-1]);
+// console.log(ArrayDemo.reverse());                           //Reverse Array
+// console.log(ArrayDemo.sort());                              //Sort Array 
+// console.log(ArrayDemo.slice(2,ArrayDemo.length));           //Slice
+// ArrayDemo.splice(2,1,'car9') 
+// console.log( ArrayDemo.splice(2,1,'car9'))
+// console.log(ArrayDemo.splice(1,ArrayDemo.length,'car9'));  
+// console.log(ArrayDemo)                     //Splice   
+// console.log(ArrayDemo[0], ArrayDemo[1], ArrayDemo[2]);
+// console.log(ArrayDemo.length);
+// let check = ArrayDemo.indexOf('car2');
+// if(check > 0)
+// {
+//     console.log('car2' + ' is the car');
+// }
+// else
+// {
+//     console.log('the car is not found in the array');
+// }
+
+// let cars = 'BMW';
+// const car = cars.split('');
+// console.log(car);
+
+
+// let arr = [];
+// arr[0] = '1';
+// arr[1] = '1';
+// arr[2] = '1';
+// console.log(arr);
+
+// console.log(ArrayDemo.concat(arr));
+
+// let ar = Array(5).fill('0');              //Here array is created with array const. and fill() method is used to populate array
+// console.log(ar);
+
+
+
+// console.log(ar.toString());                 //Converts the array into string
+// console.log(typeof ar.join(' '));                  //Join the elements of array
+
+
+
+// let arr1 = [1,2,3];
+// let arr2 = [4,5,6];
+// console.log(arr1.length);
+// let mainarr = [[1,5,9], [3,5,7]];                   
+// console.log(mainarr[0]);
+
+// const webTechs = [
+//   'HTML',
+//   'CSS',
+//   'JavaScript',
+//   'React',
+//   'Redux',
+//   'Node',
+//   'MongoDB'
+// ]
+
+// console.log(webTechs.join(' '));
+
+
+
+// let checking = prompt('Enter the Tech')
+// if(webTechs.includes(checking))
+// {
+//     confirm('It Is Present');
+// }
+// else
+// {
+//     confirm('It Is Not Present');
+// }
+
+
+
+// let num = [1,2,3,4,5,6]
+// console.log(num)
+// // num.splice(2,2,9,10)
+// // console.log(num)
+// console.log(num.slice(3,num.length));
+// let other = num.reverse();
+// let otherother = other.slice(3,other.length).reverse()
+// console.log(otherother);
+
+
+// let numm = [1,2,3,4,5,6]
+// let diffnumm = [6,5,4,3,2,1]
+// numm.shift(numm[0])                             //Remove 1st element of array
+// numm.splice(Math.floor(numm.length)/2,1)        //Remove Middle Element of array
+// numm.pop(numm)                                   //Remove Last Element of array
+// console.log(numm);
+// numm.splice(0,numm.length);
+// console.log(numm.length);
+
+
+// let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+// let multiplewords = ['.',',']
+// let plain = text.replace(/[.,]/g,'');               //Replace All "." and "," with ""
+// console.log(plain);
+// let words = plain.split(' ')                        //To convert array from string; 
+// console.log(words)
+// console.log(words.length)
+
+
+
+// const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
+// const shoppingCart2 = ['Milk', 'Coffee', 'Tea', 'Honey'];
+
+// shoppingCart.unshift('Maze');
+// console.log(shoppingCart);
+// console.log(nu)
+// console.log(shoppingCart.indexOf('hi'))
+// if(shoppingCart.indexOf('Sugar') == -1)
+// {
+//     shoppingCart.push('Sugar');
+//     console.log(shoppingCart);
+// }
+// if(shoppingCart.includes('Honey'))
+// {
+//     shoppingCart.splice(shoppingCart.indexOf('Honey'),1)
+//     console.log(shoppingCart);
+// }
+
+
+// console.log(shoppingCart.concat(shoppingCart2))
+
+
+
+
+// console.log(diffnumm.sort())
+// console.log(Math.max.apply(this, diffnumm))
+// console.log(Math.min.apply(this, diffnumm))
+// let eve = Math.ceil(diffnumm.length/2)
+// let eve2 = Math.abs(diffnumm.length/2 - 1.2)             //abs() will give absolute value(posiitve value only)
+// console.log(eve);
+// console.log(eve2);
+// console.log(eve + eve2);
+// console.log(Math.m.apply(this, diffnumm))
+// JSON.stringify(diffnumm,null,4)
+
+// for(let i = 0 ; i = diffnumm.length ; i++)
+// {
+//     console.log(diffnumm[i]);
+// }
+// console.log(diffnumm.splice(0,eve))
+// console.log(diffnumm.splice(-eve))
+
+
+// for(let i = 0 ; i < 5 ; i++)
+// {
+//     console.log(i);
+// }
+
+// const countries = ['Ind', 'Aus', 'Can', 'Usa', 'Rus']
+// const newArr = []
+// for(let i = 0; i < countries.length ; i++)
+// {
+//     newArr.push(countries[i].toUpperCase());
+// }
+// console.log(newArr);
+
+// const numbers = [1, 2, 3, 4, 5]
+// let sum = 0
+// for(let i = 0; i < numbers.length ; i++)
+// {
+//     sum = sum + numbers[i];
+// }
+
+
+//  let i = 0
+//  let sum = 0
+// while(i < numbers.length)
+// {
+//     sum = sum + numbers[i];
+//     i++;
+// }
+
+// do
+// {
+//     sum = sum + (i % 2 == 0);
+//     i++;
+// }
+// while(i <= 100)
+// console.log(sum);
+
+
+
+// for(var lkkj of numbers)
+// {
+//     console.log(lkkj[0])
+// }
+
+
+// for(let i = 0 ; i < 5 ; i++)
+// {
+//     if(i == 3)
+//     {
+//         break
+//     }
+//     console.log(i);
+// }
+
+
+
+// for(let i = 0 ; i < 5 ; i++)
+// {
+//     if(i == 3)
+//     {
+//         continue
+//     }
+//     console.log(i);
+// }
+
+
+
+
+
+// for(let i = 0 ; i <= 100 ; i++)
+// {
+//     if(i%2 == 0)
+//     {
+//         console.log(i)
+//     }
+// }
+// for(let i = 0 ; i <= 100 ; i++)
+// {
+//     if(i%2 != 0)
+//     {
+//         console.log(i)
+//     }
+// }
+
+// let i = 10
+// while(i >= 0)
+// {
+//     console.log(i);
+//     i--;
+// }
+
+// do
+// {
+//     console.log(i);
+//     i--;
+// }
+// while(i >= 0)
+
+
+// let string = "";
+// for(let i = 1; i < 5 ; i++)
+// {
+//     for(let j = 0; j < i ; j++)
+//     {
+//         string = string + "#";
+//     }
+//     string = string + "\n";
+// }
+// console.log(string);
+
+
+
+function fullname(fname, lname)
+{
+    let name = fname +" "+ lname
+    return name
+}
+
+console.log(fullname('Ravi', 'Patel'))
+
+function smaAll()
+{
+    console.log(arguments)
+}
+smaAll(1,2,3)
+
+function sumofnum()
+{
+    let sum = 0
+    for(let i = 0 ; i <= arguments.length; i++)
+    {
+        sum = sum + i
+    }
+    return sum;
+
+}
+console.log(sumofnum(1,2,3,4,5));
+
+
+const anonymousFun = function() {
+  console.log(
+    'I am an anonymous function and my value is stored in anonymousFun'
+  )
+}
+
+anonymousFun();
+
+
+const square = function(n)
+{
+    let sum = n * n;
+    return sum;
+} 
+
+console.log(square(3));
+
+
+
+
+
+(function(n) {
+  console.log(n * n)
+})(10) // 4, but instead of just printing if we want to return and store the data, we do as shown below
+
+let squaredNum = (function(n) {
+  return n * n
+})(12)
+
+console.log(squaredNum)
+
+function squnum(num = 2)
+{
+    let final = num * num;
+    return final;
+}
+console.log(squnum());
+
+
+
+
+/*------------------------------------Arrow Function------------------------------------------*/
+
+const squaring = n => {
+return n * n;
+}
+console.log(squaring(5))
+
+
+
+
+let convertouppercase = arryof => 
+{
+    const arryofSomething = []
+    for(const element of arryof)
+    {
+        arryofSomething.push(element.toUpperCase())
+    }
+    return arryofSomething;
+}
+let countries = ['Finland', 'Sweden']
+console.log(convertouppercase(countries));
+countries.forEach(function(n){
+console.log(n);
+});
+
+let hm = [1,2,3,4]
+hm.forEach(function(n){
+console.log(n);
+});
+
+
+const person = 
+{
+    fname:"Ravi",
+    lname:"Patel",
+    age: 22,
+    gender: "Male",
+    AreaOfInterest: ['Software Development', 'Sports', 'Fitness']
+}
+console.log(person.AreaOfInterest[0])
+console.log("My Name is: "+person.fname+" "+person.lname);
+console.log("My Age is: "+person.age);
+console.log("My Gender is: "+ person.gender);
+person.Designation = 'SDE1';
+console.log(person)
+console.log(person.Designation)
+
+const person2 = {
+  firstName: 'Asabeneh',
+  lastName: 'Yetayeh',
+  age: 250,
+  country: 'Finland',
+  city: 'Helsinki',
+  skills: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Node',
+    'MongoDB',
+    'Python',
+    'D3.js'
+  ],
+  getFullName: function() {
+    return `${this.firstName} ${this.lastName}`
+  },
+  'phone number': '+3584545454545'
+}
+console.log(person2.getFullName())
+
+
+/*-----------------------------------Object Method-----------------------------------*/
+
+//Object is a key value pair
+
+/*
+types of object methods: 
+1) Object.assign : to copy and object.
+2) Object.keys : to get key or property of object in array.
+3) Object.values : to get values of object in array.
+4) Object.entries : to get key and values of object in array.
+5) hasOwnProperty : to check specific key and property exists in object.
+*/
+
+
+
+const Employee3005 = 
+{
+    fname:"Ravi",
+    lname:"Patel",
+    age: 22,
+    gender: "Male",
+    Designation: "Software Developer"
+}
+console.log(Employee3005);
+
+
+// 1) Object.assign 
+const newemployee3005 = Object.assign({}, Employee3005);
+console.log(newemployee3005);
+
+
+// 2) Object.keys
+const objectKeys = Object.keys(Employee3005);
+console.log(objectKeys);
+
+
+// 3) Object.values
+const objectValues = Object.values(Employee3005);
+console.log(objectValues);
+
+
+// 4) Object.entries
+const objectEntries = Object.entries(Employee3005);
+console.log(objectEntries);
+
+
+// 5) hasOwnProperty
+ console.log(Employee3005.hasOwnProperty('isMarried'));
+
+
+
+const dog = {
+    name: 'Major',
+    legs: 4,
+    color: 'Black',
+    age: 10,
+    bark: function(){
+        return "woohhfff woohhfff!!!";
+    }
+}
+
+// dog.forEach(function(n)
+// {
+//     console.log(n, n[keys]);
+// });
+console.log(dog);
+console.log(dog.bark());
+
+
+
+
+const users = {
+   Alex: {
+     email: "alex@alex.com",
+     skills: ["HTML", "CSS", "JavaScript"],
+     age: 20,
+     isLoggedIn: false,
+     points: 30
+   },
+   Asab: {
+     email: "asab@asab.com",
+     skills: ["HTML", "CSS", "JavaScript", "Redux", "MongoDB", "Express", "React", "Node"],
+     age: 25,
+     isLoggedIn: false,
+     points: 50
+   },
+   Brook: {
+     email: "daniel@daniel.com",
+     skills: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+     age: 30,
+     isLoggedIn: true,
+     points: 50
+   },
+   Daniel: {
+     email: "daniel@alex.com",
+     skills: ["HTML", "CSS", "JavaScript", "Python"],
+     age: 20,
+     isLoggedIn: false,
+     points: 40
+   },
+   John: {
+     email: "john@john.com",
+     skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Node.js"],
+     age: 20,
+     isLoggedIn: true,
+     points: 50
+   },
+   Thomas: {
+     email: "thomas@thomas.com",
+     skills: ["HTML", "CSS", "JavaScript", "React"],
+     age: 20,
+     isLoggedIn: false,
+     points: 40
+   },
+   Paul: {
+     email: "paul@paul.com",
+     skills: ["HTML", "CSS", "JavaScript", "MongoDB", "Express", "React", "Node"],
+     age: 20,
+     isLoggedIn: false,
+     points: 40
+   }
+ }
+
+console.log(Object.values(users).filter(x => x.isLoggedIn).length);
+
+
+
+
+
+
+/*------------------------------------------Higher Order Function------------------------------------------*/
+
+// CallBack Function: A function which works as a parameter for other function
+
+//CALLBACK WITH PARAMETERS
+// const callback = n =>
+// {
+//     return n**2;
+// }
+// function cube(callback, n)
+// {
+//     return callback(n) * n
+// }
+
+//CALLBACK WITHOUT PARAMETER
+const callback = function()
+{
+    return 2;
+}
+
+function cube(callback, n)
+{
+    return callback() * n
+}
+console.log(cube(callback, 3));
+
+
+// RETURNING Function: A function which Returns something
+const numbers = [1, 2, 3, 4]
+const sumArray = arr => {
+  let sum = 0
+  arr.forEach(function(element) {
+    // sum += element
+    sum = sum + element;
+  })
+  return sum
+}
+console.log(sumArray(numbers))
+
+
+// Time-Interval && Time-Out
+function currentTime()
+{
+    let current = new Date();
+    let timeis = current.getHours()+":"+current.getMinutes()+":"+current.getSeconds()+" AM";
+    console.log(timeis);
+}
+
+// setInterval(currentTime, 1000);
+// setTimeout(currentTime, 5000)
+
+
+/*------------------------------------Functional Programming------------------------------------*/
+
+
+/*
+All Builtin methods takes callback function
+1. map()
+2. filter()
+3. reduce()
+4. find()
+5. every()
+6. some()
+7. sort()
+*/
+
+
+// forEach : Use to iterate an array element
+
+const nameupper = ['ravi', 'vedika', 'ved']
+
+// 1. map()
+const uppernumber = nameupper.map((name) => name.toUpperCase())
+console.log(uppernumber)
+
+
+const only3 = nameupper.map((name) => name.slice(0,1))
+console.log(only3);
+
+
+// 2. filter()
+const fi = nameupper.filter((name) => name.includes('i'))
+console.log(fi);
+
+const fi2 = nameupper.filter((name) => name.length <= 4)
+console.log(fi2);
+
+
+//3. reduce()
+// nameupper.reduce((acc, cur) => {
+//     return
+// }, initialvalue);
+
+// const re = nameupper.reduce((acc, cur) => acc + cur, 0)
+// console.log(re);
+
+
+// 4. every()
+const eve = nameupper.every((name) => name === 'ravi')
+console.log(eve);
+
+
+// 5. find()
+const fin = nameupper.find((name) => name.length > 4 )
+console.log(fin);
+
+
+// 6. some()
+const som = nameupper.some((name) => name === 'ved')
+console.log(som);
+
+
+// 7. sort()
+let nos = [12.4,23.6,15.2,20,55]
+const sor = nos.sort(function(a, b){
+    return b - a;
+});
+console.log(sor);
+console.log(sor.reverse());
+
+
+
+/*-----------------------------JS Events-----------------------------*/
+
+/*
+onchange	An HTML element has been changed
+onclick	The user clicks an HTML element
+onmouseover	The user moves the mouse over an HTML element
+onmouseout	The user moves the mouse away from an HTML element
+onkeydown	The user pushes a keyboard key
+onload	The browser has finished loading the page
+*/
+
+/*-----------------------------DESTRUCTURING & SPREAD-----------------------------*/
+
+
+//DESTRUCTURING ARRAY
+
+const DesArr = [1,2,3,4,5]
+let [n1,n2,n3,n4,n5] = DesArr;
+// let [n1,n2,n3,n4,n5] = DesArr.reverse();
+console.log(n1,n2,n3,n4,n5);
+
+
+
+const fullStack = [['HTML', 'CSS', 'JS', 'React'],['Node', 'Express', 'MongoDB']]
+const [frontEnd, backEnd] = fullStack
+console.log(frontEnd)
+console.log(backEnd)
+
+
+const nu = [1, 2, 3]
+let [numOne, , numThree] = nu //2 is omitted
+console.log(numOne, numThree)
+
+
+
+
+const names = [ , 'Brook', 'David']
+let [
+  firstPerson = 'Asabeneh',
+  secondPerson,
+  thirdPerson,
+  fourthPerson = 'John'
+] = names
+
+console.log(firstPerson, secondPerson, thirdPerson, fourthPerson)  
+
+
+
+
+
+
+
+
+
+
+
+const c = [['India','Ahmedabad'],['Sweden','Stockholm'],['Norway','Oslo']]
+let [c1, c2, c3] = c
+for (let [Country, City] of c)
+{
+    console.log(Country,City);
+}
+console.log(c);
+
+
+
+
+
+//DESTRUCTURING OBJECT
+
+// const rectangle = {
+//   width: 20,
+//   height: 10,
+//   area: 200
+// }
+// let { width, height, area} = rectangle
+
+// console.log(width, height, area)
+
+
+//Renaming with destructuring
+const rectangle = {
+  width: 20,
+  height: 10,
+  area: 200
+}
+let { width: w, height: h, area: a} = rectangle      //--> Renaming with 'w','h','a'
+
+console.log(w, h, a);
+
+
+
+
+
+
+const todoList = [
+{
+  task:'Prepare JS Test',
+  time:'4/1/2020 8:30',
+  completed:true
+},
+{
+  task:'Give JS Test',
+  time:'4/1/2020 10:00',
+  completed:false
+},
+{
+  task:'Assess Test Result',
+  time:'4/1/2020 1:00',
+  completed:false
+}
+]
+for (let {task, time, completed} of todoList)
+{
+  console.log(task, time, completed);
+}
+
+
+
+
+//Spread Or Rest Operator
+
+const n = [1,2,3,4,5,6,7,8,9,10]
+let [n11,n12,n13,n14,n15, ...nn] = n            // '...' is the Rest or spread Operator  
+console.log(n11,n12,n13,n14,n15)
+console.log(nn)
+
+const sumAllNums = (...args) => {
+  console.log(args)
+}
+
+sumAllNums(1, 2, 3, 4, 5)
+
+
+/*----------------------Console object Methods----------------------*/
+
+console.log('%c30 Days Of JavaScript', 'color:lightblue') // log output is green
+console.warn('Ouchhh!!!')
+console.error('This is an error message')
+const self = {
+  name: 'Ravi Patel',
+  title: 'SED1',
+  country: 'India',
+  city: 'Ahmedabad',
+  age: 22
+}
+console.table(self)
+
+
+const users99 = [
+  {
+    name: 'Asabeneh',
+    title: 'Programmer',
+    country: 'Finland',
+    city: 'Helsinki',
+    age: 250
+  },
+  {
+    name: 'Eyob',
+    title: 'Teacher',
+    country: 'Sweden',
+    city: 'London',
+    age: 25
+  },
+  {
+    name: 'Asab',
+    title: 'Instructor',
+    country: 'Norway',
+    city: 'Oslo',
+    age: 22
+  },
+  {
+    name: 'Matias',
+    title: 'Developer',
+    country: 'Denmark',
+    city: 'Copenhagen',
+    age: 28
+  }
+]
+console.table(users99)
+
+
+const countr = [
+  ['Finland', 'Helsinki'],
+  ['Sweden', 'Stockholm'],
+  ['Norway', 'Oslo']
+]
+console.time('for of loop')
+for (const [name, city] of countr) {
+  console.log(name, city)
+}
+console.timeEnd('for of loop')
+
+
+console.info('30 Days Of JavaScript challenge is trending on Github')
+
+//assert will show error msg is asserts fails else nothing happens
+console.assert(4 > 3, '4 is greater than 3') // no result
+console.assert(3 > 4, '3 is not greater than 4') // Assertion failed: 3 is not greater than 4
+
+
+const func = () => {
+  console.count('Function has been called')
+}
+func()
+
+
+// console.clear()
+
+
+
+
+</script>
+</body>
+
+
+<!-- 1. Object methods(Object.assign, Object.keys, Object.values, Object.entries, hasOwnProperty)
+2. Higher Order Function(callback, return, setInterval, setTimeout)
+3. Functional Programming(forEach, map, filter, find, every, some, sort)
+4. Destructuring(Array(with and without iteration), Object(with and without iteration))
+5. Spread/Rest Operator 
+6. Regular Expression
+7. Console Object Methods
+8. JS Events -->

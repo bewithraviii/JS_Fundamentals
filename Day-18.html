@@ -1,0 +1,47 @@
+<head></head>
+<body>
+<script>
+
+
+
+
+// Promise
+const doPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    const skills = ['HTML', 'CSS', 'JS']
+    if (skills.length > 0) {
+      resolve(skills)
+    } else {
+      reject('Something wrong has happened')
+    }
+  }, 2000)
+})
+
+doPromise
+  .then(result => {
+    console.log(result)
+  })
+  .catch(error => console.log(error))
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+
+
+Completed Topic Today:
+1. Error Handling
+2. Classes (constructor, methods)
+3. Getter and Setter
+4. Inheretance
+5. Overriding Methods
+6. JSON
+7. Web Storage
+8. Promise(Introduction)
