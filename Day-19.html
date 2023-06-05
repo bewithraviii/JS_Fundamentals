@@ -1,0 +1,38 @@
+<head></head>
+<body>
+<script>
+
+/*-----------------------------------------Closure-----------------------------------------*/
+
+
+
+function incr() {
+    let num =  0;
+    function incriment() {
+        num++
+        return num
+    }
+    return incriment
+}
+const innerfun = incr()
+
+console.log(innerfun())
+console.log(innerfun())
+console.log(innerfun())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>

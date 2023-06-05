@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Document Object Model</title>
+    </head>
+    <body>
+     <h1 class='title' id='first-title'>First Title</h1>
+     <h1 class='title' id='second-title'>Second Title</h1>
+     <h1 class='title' id='third-title'>Third Title</h1>
+     <h1></h1>
+
+
+     <!-- <div class="wrapper">
+        <h1>Asabeneh Yetayeh challenges in 2020</h1>
+        <h2>30DaysOfJavaScript Challenge</h2>
+        <ul></ul>
+    </div> -->
+
+    <div class="wrapper2">
+        <h1>Asabeneh Yetayeh challenges in 2020</h1>
+        <h2>30DaysOfJavaScript Challenge</h2>
+        <ul>
+            <li>30DaysOfPython Challenge Done</li>
+            <li>30DaysOfJavaScript Challenge Ongoing</li>
+            <li>30DaysOfReact Challenge Coming</li>
+            <li>30DaysOfFullStack Challenge Coming</li>
+            <li>30DaysOfDataAnalysis Challenge Coming</li>
+            <li>30DaysOfReactNative Challenge Coming</li>
+            <li>30DaysOfMachineLearning Challenge Coming</li>
+        </ul>
+    </div>
+
+    <div>
+        <button>Click</button>
+        <button onclick="clickme()">Click me</button>
+    </div>
+    
+    </body>
+  </html>
+
+<script>
+
+
+const btn = document.querySelector('button')
+btn.addEventListener('click', e => {
+   console.log('You Just Clicked The "Clicked" button')
+})
+
+const clickme = () => {
+    alert('This was fun')
+}
+
+let titles = document.getElementsByClassName('title')
+for (let i = 0 ; i < titles.length; i++)
+{
+    console.log(titles[i].innerHTML)
+}
+// const lists = `
+//     <li>30DaysOfPython Challenge Done</li>
+//     <li>30DaysOfJavaScript Challenge Ongoing</li>
+//     <li>30DaysOfReact Challenge Coming</li>
+//     <li>30DaysOfFullStack Challenge Coming</li>
+//     <li>30DaysOfDataAnalysis Challenge Coming</li>
+//     <li>30DaysOfReactNative Challenge Coming</li>
+//     <li>30DaysOfMachineLearning Challenge Coming</li>`
+// const ul = document.querySelector('ul')
+// ul.innerHTML = lists
+
+const ul2 = document.querySelectorAll('ul')
+ul2.forEach(element => {
+    element.style.fontSize = '16px'  
+})
+
+</script>
+
+
+
+
+
+

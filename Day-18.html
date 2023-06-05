@@ -5,29 +5,141 @@
 
 
 
-// Promise
-const doPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    const skills = ['HTML', 'CSS', 'JS']
-    if (skills.length > 0) {
-      resolve(skills)
-    } else {
-      reject('Something wrong has happened')
-    }
-  }, 2000)
-})
+//Promise
+// const doPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     const skills = ['HTML', 'CSS', 'JS']
+//     if (skills.length > 0) {
+//       resolve(skills)
+//     } else {
+//       reject('Something wrong has happened')
+//     }
+//   }, 2000)
+// })
 
-doPromise
-  .then(result => {
-    console.log(result)
-  })
-  .catch(error => console.log(error))
-
+// doPromise.then(result => {
+//     console.log(result)
+//   })
+//   .catch(error => console.log(error))
 
 
 
+// Callback Function
+// let squ = (n) => {              //Annonomy's Function "squ" with "n" as a parameter
+//   return n**2;
+// }
+
+// console.log(squ(2))             //Calling this function by passsing paramaeter
+
+// let squtwice = (squ, n) => {    //Declaring the another function and using the "squ" function as parameter.
+//   return squ(n) ** n;           //Assigning Value to the 
+// }
+
+// console.log(squtwice(squ, 2))
 
 
+
+
+
+
+// const doPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     const skills = ['HTML', 'CSS', 'JS']
+//     if (skills.includes('Node')) {
+//       resolve('fullstack developer')
+//     } else {
+//       reject('Something wrong has happened')
+//     }
+//   }, 2000)
+// })
+
+// doPromise
+//   .then(result => {
+//     console.log(result)
+//   })
+//   .catch(error => console.error(error))
+
+
+/*-------------------------------------Promise-------------------------------------*/
+
+
+// let trial = new Promise((accept, reject) => {
+//   let skills = ["HTML", "CSS", "ReactJs"]
+//   if(skills.includes("ReactJs"))
+//   {
+//     accept('FullStack Developer')
+//   }
+//   else
+//   {
+//     reject('Not Fullstack Developer')
+//   }
+// })
+
+
+// trial
+// .then(accept => { console.log(accept) })
+// .catch(reject => { console.warn(reject) })
+
+
+
+
+
+
+/*-------------------------------------Fetch API-------------------------------------*/
+
+
+// let url = 'https://restcountries.com/v2/all'
+// fetch(url)
+// .then(response => response.json())
+// .then(data => { 
+//   console.log(data)
+//   let country = data.find(x => x.name === 'India')
+//   let countrylang = country.languages[0]
+//   // let Language = Object.values(countrylang)
+//   let Language = Object.values(countrylang)[2]
+//   // let lang = Language.map(([key, val] = entry) => { return `${key}, ${val}`})
+//   // let hindi = Language["Hindi"]
+//   console.log("Name of Country is: "+country.name)
+//   console.log("Capital of "+country.name+" is: "+country.capital)
+//   console.log("Language of "+country.name+" is: "+Language)
+//   console.log("Population of "+country.name+" is: "+country.population)
+//   console.log("Area of "+country.name+" is: "+country.area)
+
+//  })
+// .catch(error => { console.log(error)})
+  
+
+
+
+/*-------------------------------------Async Await-------------------------------------*/
+
+
+let theurl = 'https://restcountries.com/v2/all'
+let fetchdata = async () => {
+  try
+  {
+    const response = await fetch(theurl)
+    const countries = await response.json()
+    console.log(countries)
+    let country = countries.find(x => x.name === 'India')
+  let countrylang = country.languages[0]
+  // let Language = Object.values(countrylang)
+  let Language = Object.values(countrylang)[2]
+  // let lang = Language.map(([key, val] = entry) => { return `${key}, ${val}`})
+  // let hindi = Language["Hindi"]
+  console.log("Name of Country is: "+country.name)
+  console.log("Capital of "+country.name+" is: "+country.capital)
+  console.log("Language of "+country.name+" is: "+Language)
+  console.log("Population of "+country.name+" is: "+country.population)
+  console.log("Area of "+country.name+" is: "+country.area)
+  }
+  catch(err)
+  {
+    console.warn(err)
+  }
+}
+
+fetchdata()
 
 
 
@@ -36,7 +148,7 @@ doPromise
 </body>
 
 
-Completed Topic Today:
+<!-- Completed Topic Today:
 1. Error Handling
 2. Classes (constructor, methods)
 3. Getter and Setter
@@ -44,4 +156,4 @@ Completed Topic Today:
 5. Overriding Methods
 6. JSON
 7. Web Storage
-8. Promise(Introduction)
+8. Promise(Introduction) -->
